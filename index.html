@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NoteApp</h1>
+        <!-- Это форма для добавления новой заметки -->
+        <form class="note__form">
+            <textarea class="note__textarea" placeholder="Напишите заметку..."></textarea>
+            <button class="btn note__add" type="submit">Добавить Заметку</button>
+        </form>
+        <!-- Кнопка для сохранения всех заметок в файл -->
+        <button class="btn note__save">Сохранить заметки в файл</button>
+        <!-- Поле для загрузки файла с заметками -->
+        <input id="note__load" class="note__load" type="file">
+        <!-- Список, где будут отображаться заметки -->
+        <ul class="note__list"></ul>
+    </div>
+	<!-- Тип модуль сделан для того, чтобы браузер понимал, что используются экспорты и импорты -->
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
